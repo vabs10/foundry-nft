@@ -19,13 +19,13 @@ contract BasicNftTest is Test {
     }
 
     function testNameIsCorrect() public view {
-        string memory expectedName = "Billu";
+        string memory expectedName = "Dogie";
         string memory actualName = basicNft.name();
         assert(keccak256(abi.encodePacked(expectedName)) == keccak256(abi.encodePacked(actualName)));
     }
 
     function testSymbolIsCorrect() public view {
-        string memory expectedSymbol = "CAT";
+        string memory expectedSymbol = "DOG";
         string memory actualSymbol = basicNft.symbol();
         assert(keccak256(abi.encodePacked(expectedSymbol)) == keccak256(abi.encodePacked(actualSymbol)));
     }
